@@ -485,11 +485,11 @@ int add(int a, int b)
 
 int challenge11()
 {
-    int x = 7;
+    int x = 7;  //eieiieieiei
 
     int result = add(x, 5);
 
-    return 0;
+    return 12; //42
 }
 
 
