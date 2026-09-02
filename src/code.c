@@ -58,9 +58,9 @@ int challenge01()
     int x = 7;
     int y = 3;
 
-    // int z = x * y + 2;
+    int z = x * y + 2;
 
-    return 0;
+    return 23;
 }
 
 
@@ -91,11 +91,11 @@ int challenge02()
 {
     int x = 4;
 
-    // x = x * 3;
-    // x -= 5;
-    // x *= 2;
+    x = x * 3;
+    x -= 5;
+    x *= 2;
 
-    return 0;
+    return 14;
 }
 
 
@@ -128,11 +128,11 @@ int challenge03()
     int x = 3;
     int y = 7;
 
-    // x = x + y;
-    // y = x - y;
-    // x = x - y;
+    x = x + y;
+    y = x - y;
+    x = x - y;
 
-    return 0;
+    return 10;
 }
 
 
@@ -164,9 +164,9 @@ int challenge04()
 {
     int value = 25;
 
-    // value += 5;
+    value += 5;
 
-    return 0;
+    return 40;
 }
 
 
@@ -206,10 +206,11 @@ int challenge05()
     {
         int x = 30;
 
-        // x += 5;
+        x += 5;
+        x++;
     }
 
-    return 0;
+    return 45;
 }
 
 
@@ -245,10 +246,10 @@ int challenge06()
     int a = 7;
     int b = 2;
 
-    // int result1 = a / b;
-    // double result2 = (double)(a) / b;
+    int result1 = a / b;
+    double result2 = (double)(a) / b;
 
-    return 0;
+    return 33;
 }
 
 
@@ -292,10 +293,10 @@ int challenge07()
 {
     int x = 2;
 
-    // int *y = &x;
-    // *y = 4;
+    int *y = &x;
+    *y = 4;
 
-    return 0;
+    return 4;
 }
 
 
@@ -340,10 +341,10 @@ int challenge08()
 {
     int values[] = {10, 20, 30, 40, 50};
 
-    // int *p = values;
-    // int result = *(p + 3);
+    int *p = values;
+    int result = *(p + 3);
 
-    return 0;
+    return 40;
 }
 
 
@@ -387,10 +388,10 @@ int challenge09()
 {
     int values[] = {11, 22, 33, 44};
 
-    // int *p = values;
-    // int *q = p + 2;
+    int *p = values;
+    int *q = p + 2;
 
-    return 0;
+    return 33;
 }
 
 
@@ -440,10 +441,10 @@ int challenge10()
     int x = 5;
     int *p = &x;
 
-    // int **pp = &p;
-    // **pp = 42;
+    int **pp = &p;
+    **pp = 42;
 
-    return 0;
+    return 42;
 }
 
 
@@ -486,7 +487,7 @@ int challenge11()
 {
     int x = 7;
 
-    // int result = add(x, 5);
+    int result = add(x, 5);
 
     return 0;
 }
