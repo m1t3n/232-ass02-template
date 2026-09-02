@@ -485,7 +485,7 @@ int add(int a, int b)
 
 int challenge11()
 {
-    int x = 7;  //eieiieieiei
+    int x = 7;  
 
     int result = add(x, 5);
 
@@ -538,9 +538,9 @@ int calculate(int x)
 
 int challenge12()
 {
-    // int result = calculate(4);
+    int result = calculate(4);
 
-    return 0;
+    return 18;
 }
 
 
@@ -586,17 +586,17 @@ int mystery(int n)
     if (n <= 1)
         return 1;
 
-    // int previous = mystery(n - 1);
-    // return (previous << 1) ^ n;
+    int previous = mystery(n - 1);
+    return (previous << 1) ^ n;
 
     return 0;
 }
 
 int challenge13()
 {
-    // int result = mystery(4);
+    int result = mystery(4);
 
-    return 0;
+    return 2;
 }
 
 
@@ -656,8 +656,8 @@ int transformData(int *p, int n)
     if (n == 0)
         return *p;
 
-    // int value = *(p + n);
-    // return transformData(p, n - 1) + value;
+    int value = *(p + n);
+    return transformData(p, n - 1) + value;
 
     return 0;
 }
@@ -666,7 +666,7 @@ int challenge14()
 {
     int data[] = {4, 7, 2, 9};
 
-    // int result = transformData(data, 3);
+    int result = transformData(data, 3);
 
-    return 0;
+    return 22;
 }
